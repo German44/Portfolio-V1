@@ -26,7 +26,7 @@ body{
 
 .subTitle {
     font-size: 2rem;
-    color: white;
+    color:#15A324;
     text-shadow: 0 0 5px black;
 }
 
@@ -38,6 +38,10 @@ body{
     padding: 15px 60px;
     border: solid 1px;
     border-radius: 6px;
+}
+.header_btn:hover{
+    background-color: #15A324;
+    transition: 0.5s ease;
 }
 
 nav {
