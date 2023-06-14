@@ -5,38 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Portfolio</title>
 </head>
 
 <body>
 
     <!--& Header -->
+    <div class="container_parallax">
+        <header class="container_header">
+            <nav>
+                <a href="./index.html" class="logo">German Ravarotto</a>
+                <ul class="nav_list">
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#sobre-mi">Sobre mi</a></li>
+                    <li><a href="">Contactame</a></li>
+                </ul>
+            </nav>
+            <div class="header_text">
+                <h3 class="hi">Hola!</h3>
+                <h1 class="title">Soy <span>German</span></h1>
+                <h3 class="subTitle">Desarrollador Front-End</h3>
+            </div>
+            <a href="#" class="header_btn">Descargar CV</a>
+        </header>
+    </div>
 
-    <header class="container_header">
-        <nav>
-            <a href="./index.html" class="logo">German Ravarotto</a>
-            <ul class="nav_list">
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#sobre-mi">Sobre mi</a></li>
-                <li><a href="">Contactame</a></li>
-            </ul>
-        </nav>
-        <div class="header_text">
-            <h1 class="title">Hola!<br>Soy German</h1>
-            <h3 class="subTitle">Desarrollador Front-End</h3>
-        </div>
-        <a href="#" class="header_btn">Descargar CV</a>
-    </header>
 
     <!--& About -->
 
     <section class="section_about">
-        <h3 class="about_title" id="sobre-mi">Sobre mi</h3>
+        <h3 class="about_title" id="sobre-mi">Sobre<span> mi</span></h3>
         <article class="about">
-            <div class="about_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, voluptatem. Iste
-                magnam molestias modi corrupti totam obcaecati itaque, aliquam inventore eum voluptate impedit ipsa
-                omnis?</div>
+            <div class="about_text">Soy una persona responsable y creativa en constante aprendizaje, nuevo en el mundo IT pero con experiencia en análisis y soluciones de problemas, comunicación y trabajo en equipo para lograr las metas y objetivos de la empresa.</div>
             <div class="education">
                 <ul class="education_list">
                     <li>CoderHouse-Desarrolo web Front End</li>
@@ -84,10 +85,37 @@
     <!--& Projects -->
 
     <section class="projects">
-        <h3 class="projects_title" id="projects">Proyectos</h3>
+        <h3 class="projects_title" id="projects">Ultimos <span> Proyectos</span></h3>
+        <div class="container_cards">
+            <div class="cards">
+                <img src="./img/Firefox_Screenshot_Linux.PNG" alt="">
+                <div class="layer">
+                    <h4>titulo</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid sapiente officia, quos e</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="./img/Firefox_Screenshot_Linux.PNG" alt="">
+                <div class="layer">
+                    <h4>titulo</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid sapiente officia, quos e</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="cards">
+                <img src="./img/Firefox_Screenshot_Linux.PNG" alt="">
+                <div class="layer">
+                    <h4>titulo</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid sapiente officia, quos e</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
 
 
     </section>
+    <script src="https://kit.fontawesome.com/8fd4774874.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
