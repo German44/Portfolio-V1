@@ -239,11 +239,13 @@ nav {
 
 .cards img {
     width: 100%;
-    transition: .5s ease;
+    height: 400px;
+    transition: .4s ease;
 }
 
 .cards:hover img {
     transform: scale(1.1);
+    filter:blur(8px)
 }
 
 .cards .layer {
@@ -268,15 +270,16 @@ nav {
 }
 
 .layer h4 {
-    color: var(--color-texto);
+    color: var(--color-3);
     font-size: 1.5rem;
     text-decoration: underline;
 }
 
 .layer p {
-    font-size: 1rem;
-    color: var(--color-texto);
+    font-size: 1.5rem;
+    color: var(--color-3);
     margin: 4rem 0;
+    font-weight: 700;
 }
 
 .layer a {
