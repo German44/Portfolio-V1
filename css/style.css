@@ -238,9 +238,10 @@ nav {
 }
 
 .cards img {
-    width: 100%;
+    max-width: 100%;
     height: 400px;
     transition: .4s ease;
+    object-fit: cover;
 }
 
 .cards:hover img {
@@ -351,6 +352,148 @@ footer {
     box-shadow: 0 0 1rem var(--color-primario);
     text-shadow: 0 0 1rem var(--color-3);
     transition: 0.3s ease;
+}
 
+/** Responsive Mobile */
+
+@media screen and (max-width: 900px) {
+
+    .container_header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+    }
+
+    .header_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .title {
+        font-size: 4rem;
+    }
+
+    .hi {
+        font-size: 3rem;
+    }
+
+    .subTitle {
+        font-size: 1.5rem;
+    }
+
+    .header_btn {
+        font-size: 1.5rem;
+        padding: 10px 40px;
+    }
+
+    /** navBar */
+
+    .nav_list li a {
+        padding: 5px;
+        font-size: 1rem;
+    }
+
+    /** about */
+    .about {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 3rem;
+    }
+
+    .about_text,
+    .education {
+        width: 100%;
+        height: auto;
+    }
+
+    .about_text {
+        font-size: 1.2rem;
+    }
+
+    .education_list li {
+        font-size: 1.2rem;
+    }
+
+    /** Projects */
+
+    .projects {
+        width: 100%;
+        height: auto;
+    }
+
+    .container_cards {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+    }
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+    .container_header {
+        height: 400px;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .hi {
+        font-size: 2rem;
+    }
+
+    .subTitle {
+        font-size: 1rem;
+    }
+
+    .header_btn {
+        font-size: 1rem;
+        padding: 8px 30px;
+    }
+
+    /** navBar */
+
+    nav {
+        display: none;
+    }
+
+    /* .nav_list li a {
+        padding: 4px;
+        font-size: 0.8rem;
+    } */
+
+    /** about */
+    .about_title,
+    .tools_title,
+    .projects_title {
+        font-size: 1.5rem;
+    }
+
+    .about_text {
+        font-size: 1rem;
+    }
+
+    .education_list li {
+        font-size: 1rem;
+    }
+
+    .sociales {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        gap: 3rem;
+        margin:2rem 0;
+    }
 
 }
